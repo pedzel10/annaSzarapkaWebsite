@@ -7,7 +7,7 @@
 
 body {
   height: 200vh;
-  background-color: #FFF6F2;
+  background-color: #fff6f2;
 }
 
 .home {
@@ -24,14 +24,53 @@ body {
   font-family: 'MiamaNuevaMedium';
   font-weight: normal;
   font-style: italic;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 3px #000;
   font-size: 25px;
 }
 
 .nav {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(255, 246, 242, 0.938);
+  height: 100%;
+  width: 70%;
+  padding: 80px 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav.on {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.nav__list-item {
+  font-size: 22px;
+  margin: 20px 0;
+  font-family: 'MiamaNuevaMedium';
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #361d1b;
 }
 
 .hamburger {
@@ -50,6 +89,7 @@ body {
           justify-content: space-between;
   width: 45px;
   height: 34px;
+  z-index: 2;
 }
 
 .hamburger__line {
@@ -81,6 +121,6 @@ body {
   font-family: 'MiamaNuevaMedium';
   font-weight: normal;
   font-style: italic;
-  color: #371E1C;
+  color: #361d1b;
 }
 /*# sourceMappingURL=style.min.css.map */
