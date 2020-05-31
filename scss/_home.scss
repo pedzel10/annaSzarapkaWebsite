@@ -62,7 +62,8 @@ body {
     margin: 10px 0;
     font-family: 'MiamaNuevaMedium';
 
-    transition: .5s;
+
+    ;
 }
 
 .nav__link {
@@ -88,17 +89,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    transform: translateY(-100%);
+    transform: translateY(-110px);
 
     list-style: none;
 
 
     transition: .5s;
+    transition-delay: .2s;
 
 }
 
+
 .nav__list-publications-section.on {
+
     transform: translateY(0);
+
+
 }
 
 .publications-section-item {
@@ -113,7 +119,15 @@ body {
 .nav__list-gallery,
 .nav__list-contact {
     transform: translateY(-110px);
+    transition: .5s;
 }
+
+.nav__list-gallery {
+    transition-delay: .1s;
+}
+
+
+
 
 .nav__list-gallery.on,
 .nav__list-contact.on {

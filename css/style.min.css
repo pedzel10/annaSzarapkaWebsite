@@ -67,8 +67,6 @@ body {
   text-align: center;
   margin: 10px 0;
   font-family: 'MiamaNuevaMedium';
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
 .nav__link {
@@ -95,11 +93,13 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-110px);
+          transform: translateY(-110px);
   list-style: none;
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .nav__list-publications-section.on {
@@ -117,6 +117,13 @@ body {
 .nav__list-contact {
   -webkit-transform: translateY(-110px);
           transform: translateY(-110px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav__list-gallery {
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
 }
 
 .nav__list-gallery.on,
