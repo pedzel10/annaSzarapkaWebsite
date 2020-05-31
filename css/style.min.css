@@ -64,13 +64,65 @@ body {
 
 .nav__list-item {
   font-size: 22px;
-  margin: 20px 0;
+  text-align: center;
+  margin: 10px 0;
   font-family: 'MiamaNuevaMedium';
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .nav__link {
   text-decoration: none;
   color: #361d1b;
+}
+
+.nav__list-publications {
+  color: #361d1b;
+}
+
+.hide {
+  overflow: hidden;
+}
+
+.nav__list-publications-section {
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  list-style: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav__list-publications-section.on {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.publications-section-item {
+  font-size: 22px;
+  color: #361d1b;
+  font-family: 'MiamaNuevaMedium';
+}
+
+.nav__list-gallery,
+.nav__list-contact {
+  -webkit-transform: translateY(-110px);
+          transform: translateY(-110px);
+}
+
+.nav__list-gallery.on,
+.nav__list-contact.on {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .hamburger {
@@ -98,10 +150,10 @@ body {
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 3px #000;
           box-shadow: 0px 0px 3px #000;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: opacity .2s, -webkit-transform .5s;
+  transition: opacity .2s, -webkit-transform .5s;
+  transition: transform .5s, opacity .2s;
+  transition: transform .5s, opacity .2s, -webkit-transform .5s;
 }
 
 .hamburger__line--first {

@@ -1,6 +1,4 @@
 const menu = () => {
-
-
     const hamburger = document.querySelector('.hamburger');
     const navOff = document.querySelectorAll('.nav-off');
     const firstLine = document.querySelector('.hamburger__line--first');
@@ -35,5 +33,20 @@ const menu = () => {
         })
     })
     hamburger.addEventListener('click', navigation);
+
+    // PUBLICATIONS
+    const publications = document.querySelector('.nav__list-publications');
+
+    const showOptions = () => {
+        const publicationsSection = document.querySelector('.nav__list-publications-section');
+        const gallery = document.querySelector('.nav__list-gallery');
+        const contact = document.querySelector('.nav__list-contact');
+
+        publicationsSection.classList.toggle('on');
+        gallery.classList.toggle('on');
+        contact.classList.toggle('on');
+    }
+
+    publications.addEventListener('click', showOptions);
 }
 menu();
