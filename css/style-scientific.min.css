@@ -22,12 +22,7 @@
   transition: .5s;
 }
 
-.nav.on {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.nav__list {
+.nav .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,21 +36,21 @@
   list-style: none;
 }
 
-.nav__list-item {
+.nav .nav__list .nav__list-item {
   text-align: center;
   margin: 10px 0;
 }
 
-.nav__link {
+.nav .nav__list .nav__list-item .nav__link {
   text-decoration: none;
   color: #361d1b;
 }
 
-.hide {
+.nav .nav__list .nav__list-publications .hide {
   overflow: hidden;
 }
 
-.nav__list-publications-section {
+.nav .nav__list .nav__list-publications .hide .nav__list-publications-section {
   height: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,33 +70,38 @@
           transition-delay: .2s;
 }
 
-.nav__list-publications-section.on {
+.nav .nav__list .nav__list-publications .hide .nav__list-publications-section .nav__list-piblications_section-link {
+  color: #361d1b;
+  text-decoration: none;
+}
+
+.nav .nav__list .nav__list-publications .hide .nav__list-publications-section.on {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.nav__list-gallery,
-.nav__list-contact {
+.nav .nav__list .nav__list-gallery,
+.nav .nav__list .nav__list-contact {
   -webkit-transform: translateY(-110px);
           transform: translateY(-110px);
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.nav__list-gallery {
+.nav .nav__list .nav__list-gallery {
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
 }
 
-.nav__list-gallery.on,
-.nav__list-contact.on {
+.nav .nav__list .nav__list-gallery.on,
+.nav .nav__list .nav__list-contact.on {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
-.nav__list-piblications_section-link {
-  color: #361d1b;
-  text-decoration: none;
+.nav.on {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .hamburger {
@@ -212,7 +212,7 @@
   background: #fff6f2;
 }
 
-.container__title {
+.container .container__title {
   padding-bottom: 15px;
   width: 100%;
   text-align: center;

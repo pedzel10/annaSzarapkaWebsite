@@ -1,13 +1,13 @@
 .container {
     padding: 20px;
-}
 
-.container__title {
-    width: 100%;
-    padding: 10px 0 20px;
-    text-align: center;
-    font-family: 'MiamaNuevaMedium';
-    font-weight: normal;
-    font-style: italic;
-    color: $main-brown;
+    .container__title {
+        width: 100%;
+        padding: 10px 0 20px;
+        text-align: center;
+        font-family: 'MiamaNuevaMedium';
+        font-weight: normal;
+        font-style: italic;
+        color: $main-brown;
+    }
 }

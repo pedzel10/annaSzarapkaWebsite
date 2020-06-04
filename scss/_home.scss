@@ -12,22 +12,32 @@ body {
 .home {
     width: 100%;
     height: 100vh;
-}
 
-.name {
-    position: absolute;
-    top: 17%;
-    width: 100%;
-    text-align: center;
+    .name {
+        position: absolute;
+        top: 17%;
+        width: 100%;
+        text-align: center;
 
-    color: #fff;
-    font-family: 'MiamaNuevaMedium';
-    font-weight: normal;
-    font-style: italic;
-    text-shadow: 2px 2px 3px #000;
-    font-size: 25px;
+        color: #fff;
+        font-family: 'MiamaNuevaMedium';
+        font-weight: normal;
+        font-style: italic;
+        text-shadow: 2px 2px 3px #000;
+        font-size: 25px;
 
-    animation: showName 1.5s;
+        animation: showName 1.5s;
+    }
+
+    .main-photo {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/background.png);
+        background-size: auto 100vh;
+        background-repeat: no-repeat;
+        background-position: 17% 0;
+        background-attachment: fixed;
+    }
 }
 
 @keyframes showName {
@@ -38,14 +48,4 @@ body {
     100% {
         opacity: 1;
     }
-}
-
-.main-photo {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/background.png);
-    background-size: auto 100vh;
-    background-repeat: no-repeat;
-    background-position: 17% 0;
-    background-attachment: fixed;
 }

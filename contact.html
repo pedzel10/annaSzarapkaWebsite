@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document</title>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/miama" type="text/css" />
+    <!-- <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/miama" type="text/css" /> -->
     <link rel="stylesheet" href="css/style-contact.min.css">
 </head>
 
@@ -37,14 +37,22 @@
         <div class="hamburger__line hamburger__line--second"></div>
         <div class="hamburger__line hamburger__line--third"></div>
     </div>
-    <main class="container nav-off">
+    <section class="container nav-off">
         <h1 class="container__title">Kontakt</h1>
-        <img src="img/beztla.png" alt="portret" srcset="">
-        <form action="">
 
-        </form>
-
-    </main>
+        <main class="container__contact">
+            <img src="img/beztla.png" alt="portret" srcset="" class="container__contact-photo">
+            <form action="" class="container__contact-form">
+                <div class="-input--line">
+                    <input type="text" class="container__contact-form-input">
+                </div>
+                <div class="email-input--line">
+                    <input type="email" class="container__contact-form-input">
+                </div>
+                <textarea class="container__contact-form-message" name="message" id="" cols="20" rows="6"></textarea>
+            </form>
+        </main>
+    </section>
     <script src="js/main.js"></script>
 </body>
 

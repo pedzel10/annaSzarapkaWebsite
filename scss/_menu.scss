@@ -12,75 +12,74 @@
 
     transform: translateX(100%);
     transition: .5s;
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+
+        .nav__list-item {
+            text-align: center;
+            margin: 10px 0;
+
+            .nav__link {
+                text-decoration: none;
+                color: $main-brown;
+            }
+        }
+
+        .nav__list-publications {
+            .hide {
+                overflow: hidden;
+
+                .nav__list-publications-section {
+                    height: 110px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    transform: translateY(-110px);
+                    list-style: none;
+                    transition: .5s;
+                    transition-delay: .2s;
+
+                    .nav__list-piblications_section-link {
+                        color: $main-brown;
+                        text-decoration: none;
+                    }
+                }
+
+                .nav__list-publications-section.on {
+                    transform: translateY(0);
+                }
+            }
+
+        }
+
+        .nav__list-gallery,
+        .nav__list-contact {
+            transform: translateY(-110px);
+            transition: .5s;
+        }
+
+        .nav__list-gallery {
+            transition-delay: .1s;
+        }
+
+        .nav__list-gallery.on,
+        .nav__list-contact.on {
+            transform: translateY(0px);
+        }
+
+    }
 }
 
 .nav.on {
     transform: translateX(0);
 }
 
-.nav__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-}
-
-.nav__list-item {
-    text-align: center;
-    margin: 10px 0;
-}
-
-.nav__link {
-    text-decoration: none;
-    color: $main-brown;
-}
-
-
-// ------------- PUBLICATIONS ---------
-.hide {
-    overflow: hidden;
-}
-
-.nav__list-publications-section {
-
-
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    transform: translateY(-110px);
-    list-style: none;
-    transition: .5s;
-    transition-delay: .2s;
-}
-
-.nav__list-publications-section.on {
-    transform: translateY(0);
-}
-
-
-
-.nav__list-gallery,
-.nav__list-contact {
-    transform: translateY(-110px);
-    transition: .5s;
-}
-
-.nav__list-gallery {
-    transition-delay: .1s;
-}
-
-.nav__list-gallery.on,
-.nav__list-contact.on {
-    transform: translateY(0px);
-}
-
-.nav__list-piblications_section-link {
-    color: $main-brown;
-    text-decoration: none;
-}
-
 //  -------------   HAMBURHER   -----------------
+
 .hamburger {
     position: fixed;
     top: 15px;

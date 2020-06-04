@@ -7,20 +7,14 @@ const menu = () => {
     const nav = document.querySelector('.nav');
 
     const navigation = () => {
-
-
-
         const showNav = () => {
             nav.classList.toggle('on');
         }
         const burgerAnimation = () => {
-
-
             firstLine.classList.toggle('on');
             secondLine.classList.toggle('on');
             thirdLine.classList.toggle('on');
         }
-
         showNav();
         burgerAnimation();
     }
@@ -46,7 +40,10 @@ const menu = () => {
         gallery.classList.toggle('on');
         contact.classList.toggle('on');
     }
-
     publications.addEventListener('click', showOptions);
 }
 menu();
+
+document.querySelector('.email-input--line .container__contact-form-input').addEventListener('focus', () => {
+    console.log('ok');
+})
