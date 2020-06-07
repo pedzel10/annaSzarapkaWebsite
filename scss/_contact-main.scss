@@ -19,6 +19,7 @@
 
         .container__contact-photo {
             width: 150px;
+
             border: 1px solid $main-brown;
         }
 
@@ -27,48 +28,88 @@
             flex-direction: column;
             align-items: center;
 
-            .test {
-                margin: 6px 0;
 
-                .container__contact-form-input {
-                    width: 150px;
-
-                    font-size: 12px;
-                    padding: 3px;
-                    border: 1px solid $main-brown;
-                }
+            .container__contact-form-input {
+                width: 200px;
+                margin-top: 12px;
+                font-size: 10px;
+                padding: 3px;
+                border: 1px solid $main-brown;
             }
 
-            .test::after {
+            .contact-form__name,
+            .contact-form__email,
+            .contact-form__message {
+                overflow: hidden;
+            }
+
+
+            .contact-form__name,
+            .contact-form__email,
+            .contact-form__message {
+                position: relative;
+            }
+
+            .contact-form__name--line,
+            .contact-form__email--line,
+            .contact-form__message--line {
+                position: absolute;
+                bottom: 0px;
+                left: 0;
                 content: '';
                 display: block;
                 width: 100%;
                 height: 2px;
-                background-color: red;
-                transform: translateY(-2px) translateX(-100%);
+                background-color: $main-brown;
+                transform: translateY(100%);
+                transition: .3s;
             }
 
+            .container__contact-form-input:focus+.contact-form__name--line,
+            .container__contact-form-input:focus+.contact-form__email--line,
+            .contact-form__message-input:focus+.contact-form__message--line {
+                transform: translateY(0%);
+            }
 
-
-            .container__contact-form-input:focus {
+            .contact-form__message-input:focus,
+            .container__contact-form-input:focus,
+            .contact-form__submit:focus {
                 outline: none;
             }
 
-            .container__contact-form-message {
-                width: 150px;
-                margin: 6px 0;
-                font-size: 12px;
+            .contact-form__message {
+                margin-top: 12px;
+                height: 110px;
+            }
+
+            .contact-form__message-input {
+                width: 200px;
+                height: 100%;
+                font-size: 10px;
                 padding: 3px;
                 border: 1px solid $main-brown;
+                resize: none;
+            }
 
+            .contact-form__submit {
+                margin-top: 8px;
+                height: 22px;
+                width: 200px;
+                background-color: $main-brown;
+                border-style: none;
+                color: $background;
+                letter-spacing: 1px;
+                font-family: 'MiamaNuevaMedium';
             }
 
 
-
-            .container__contact-form-message:focus {
-                outline: none;
-            }
         }
+
+
+
+
+
+
     }
 
 

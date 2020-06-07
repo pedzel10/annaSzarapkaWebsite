@@ -43,7 +43,3 @@ const menu = () => {
     publications.addEventListener('click', showOptions);
 }
 menu();
-
-document.querySelector('.email-input--line .container__contact-form-input').addEventListener('focus', () => {
-    console.log('ok');
-})

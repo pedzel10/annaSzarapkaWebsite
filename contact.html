@@ -43,13 +43,20 @@
         <main class="container__contact">
             <img src="img/beztla.png" alt="portret" srcset="" class="container__contact-photo">
             <form action="" class="container__contact-form">
-                <div class="-input--line">
+
+                <div class="contact-form__name">
                     <input type="text" class="container__contact-form-input">
+                    <div class="contact-form__name--line"></div>
                 </div>
-                <div class="email-input--line">
-                    <input type="email" class="container__contact-form-input">
+                <div class="contact-form__email">
+                    <input type="text" class="container__contact-form-input">
+                    <div class="contact-form__email--line"></div>
                 </div>
-                <textarea class="container__contact-form-message" name="message" id="" cols="20" rows="6"></textarea>
+                <div class="contact-form__message">
+                    <textarea class="contact-form__message-input" name="message" id="" cols="20" rows="8"></textarea>
+                    <div class="contact-form__message--line"></div>
+                </div>
+                <button class="contact-form__submit">Wyślij</button>
             </form>
         </main>
     </section>
