@@ -5,6 +5,9 @@
 
     .container__title {
         text-align: center;
+        padding-top: 20px;
+        font-family: 'MiamaNuevaMedium';
+        color: $main-brown;
     }
 
     .container__contact {
@@ -19,7 +22,6 @@
 
         .container__contact-photo {
             width: 150px;
-
             border: 1px solid $main-brown;
         }
 

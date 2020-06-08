@@ -214,6 +214,9 @@
 
 .container .container__title {
   text-align: center;
+  padding-top: 20px;
+  font-family: 'MiamaNuevaMedium';
+  color: #361d1b;
 }
 
 .container .container__contact {
