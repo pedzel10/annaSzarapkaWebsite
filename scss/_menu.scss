@@ -85,6 +85,60 @@
     }
 }
 
+@media (orientation: landscape) and (min-width: 1500px) {
+    .nav {
+        width: 40%;
+        height: auto;
+        padding: 20px 0;
+        left: 9%;
+        background-color: transparent;
+        transform: translateX(0);
+
+        .nav__list {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+
+            .nav__list-item {
+                font-size: 25px;
+                margin: 0 0;
+                text-shadow: 3px 3px 4px #000;
+                color: #fff;
+
+                .nav__link {
+                    color: #fff;
+                    text-shadow: 3px 3px 4px #000;
+                }
+            }
+
+            .nav__list-gallery,
+            .nav__list-contact {
+                transform: translateY(0px);
+
+            }
+
+            .nav__list-publications {
+
+
+                .nav__list-item-publications {
+                    cursor: pointer;
+                }
+
+                .hide {
+                    .nav__list-publications-section {
+
+                        .nav__list-piblications_section-link {
+                            color: #fff;
+                            text-shadow: 3px 3px 4px #000;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 //  -------------   HAMBURHER   -----------------
 
 .hamburger {
@@ -156,9 +210,11 @@
     .hamburger {
         top: 30px;
         right: 30px;
-
-
     }
+}
 
-
+@media (orientation: landscape) and (min-width: 1500px) {
+    .hamburger {
+        display: none;
+    }
 }

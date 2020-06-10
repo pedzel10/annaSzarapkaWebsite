@@ -111,6 +111,52 @@
   }
 }
 
+@media (orientation: landscape) and (min-width: 1500px) {
+  .nav {
+    width: 40%;
+    height: auto;
+    padding: 20px 0;
+    left: 9%;
+    background-color: transparent;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .nav .nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .nav .nav__list .nav__list-item {
+    font-size: 25px;
+    margin: 0 0;
+    text-shadow: 3px 3px 4px #000;
+    color: #fff;
+  }
+  .nav .nav__list .nav__list-item .nav__link {
+    color: #fff;
+    text-shadow: 3px 3px 4px #000;
+  }
+  .nav .nav__list .nav__list-gallery,
+  .nav .nav__list .nav__list-contact {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  .nav .nav__list .nav__list-publications .nav__list-item-publications {
+    cursor: pointer;
+  }
+  .nav .nav__list .nav__list-publications .hide .nav__list-publications-section .nav__list-piblications_section-link {
+    color: #fff;
+    text-shadow: 3px 3px 4px #000;
+  }
+}
+
 .hamburger {
   position: fixed;
   top: 15px;
@@ -218,6 +264,12 @@
   .hamburger {
     top: 30px;
     right: 30px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1500px) {
+  .hamburger {
+    display: none;
   }
 }
 

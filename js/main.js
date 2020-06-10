@@ -29,7 +29,7 @@ const menu = () => {
     hamburger.addEventListener('click', navigation);
 
     // PUBLICATIONS
-    const publications = document.querySelector('.nav__list-publications');
+    const publications = document.querySelector('.nav__list-item-publications');
 
     const showOptions = () => {
         const publicationsSection = document.querySelector('.nav__list-publications-section');
@@ -39,7 +39,10 @@ const menu = () => {
         publicationsSection.classList.toggle('on');
         gallery.classList.toggle('on');
         contact.classList.toggle('on');
+
+
     }
+
     publications.addEventListener('click', showOptions);
 }
 menu();

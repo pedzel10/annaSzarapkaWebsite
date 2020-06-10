@@ -40,6 +40,13 @@ body {
     }
 
     @media (orientation: landscape) and (min-width: 1500px) {
+        .name {
+            font-size: 55px;
+            text-align-last: right;
+            top: 40%;
+            right: 19%;
+        }
+
         .main-photo {
             background-size: 100vw auto;
             background-position: 17% 70%;
