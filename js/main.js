@@ -43,3 +43,26 @@ const menu = () => {
     publications.addEventListener('click', showOptions);
 }
 menu();
+
+// const responsiveParralax = () => {
+//     const name = document.querySelector('.name');
+
+//     const matchParallaxSpeed = () => {
+//         if (window.outerHeight > window.outerWidth) {
+//             if (window.outerHeight <= 700) name.dataset.rellaxSpeed = '-4';
+//             if (window.outerHeight > 700) name.dataset.rellaxSpeed = '-5';
+//             if (window.outerHeight > 1000) name.dataset.rellaxSpeed = '-7';
+//             if (window.outerHeight > 1300) name.dataset.rellaxSpeed = '-10';
+
+//         } else {
+//             if (window.outerHeight <= 700) name.dataset.rellaxSpeed = '-4';
+//             if (window.outerHeight > 700) name.dataset.rellaxSpeed = '-5';
+//             if (window.outerHeight > 1000) name.dataset.rellaxSpeed = '-10';
+//             if (window.outerHeight > 1300) name.dataset.rellaxSpeed = '-10';
+//         }
+//         console.log(name.dataset.rellaxSpeed);
+//     }
+//     matchParallaxSpeed();
+//     //window.addEventListener('resize', matchParallaxSpeed)
+// }
+// responsiveParralax();

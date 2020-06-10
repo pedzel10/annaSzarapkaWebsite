@@ -47,6 +47,13 @@ body {
   background-attachment: fixed;
 }
 
+@media (orientation: landscape) and (min-width: 1500px) {
+  .home .main-photo {
+    background-size: 100vw auto;
+    background-position: 17% 70%;
+  }
+}
+
 @-webkit-keyframes showName {
   0% {
     opacity: 0;
@@ -164,6 +171,13 @@ body {
           transform: translateX(0);
 }
 
+@media (orientation: portrait) and (min-width: 760px) {
+  .nav {
+    width: 40%;
+    font-size: 25px;
+  }
+}
+
 .hamburger {
   position: fixed;
   top: 15px;
@@ -183,7 +197,7 @@ body {
   z-index: 2;
 }
 
-.hamburger__line {
+.hamburger .hamburger__line {
   width: 100%;
   height: 2px;
   background-color: #fff;
@@ -195,7 +209,7 @@ body {
   transition: transform .5s, opacity .2s, -webkit-transform .5s;
 }
 
-.hamburger__line--first {
+.hamburger .hamburger__line--first {
   -webkit-animation: firstLine .8s;
           animation: firstLine .8s;
   -webkit-transform-origin: top left;
@@ -246,25 +260,32 @@ body {
   }
 }
 
-.hamburger__line--third {
+.hamburger .hamburger__line--third {
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-animation: thirdLine .8s;
           animation: thirdLine .8s;
 }
 
-.hamburger__line--first.on {
+.hamburger .hamburger__line--first.on {
   -webkit-transform: rotate(45deg) translateX(5px) translateY(-4.6px);
           transform: rotate(45deg) translateX(5px) translateY(-4.6px);
 }
 
-.hamburger__line--third.on {
+.hamburger .hamburger__line--third.on {
   -webkit-transform: rotate(-45deg) translateX(5px) translateY(5px);
           transform: rotate(-45deg) translateX(5px) translateY(5px);
 }
 
-.hamburger__line--second.on {
+.hamburger .hamburger__line--second.on {
   opacity: 0;
+}
+
+@media (orientation: portrait) and (min-width: 760px) {
+  .hamburger {
+    top: 30px;
+    right: 30px;
+  }
 }
 
 .container {
