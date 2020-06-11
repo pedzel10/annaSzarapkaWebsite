@@ -35,15 +35,27 @@ const menu = () => {
         const publicationsSection = document.querySelector('.nav__list-publications-section');
         const gallery = document.querySelector('.nav__list-gallery');
         const contact = document.querySelector('.nav__list-contact');
+        const divHide = document.querySelector('.hide');
 
         publicationsSection.classList.toggle('on');
         gallery.classList.toggle('on');
         contact.classList.toggle('on');
+        divHide.classList.toggle('on');
 
 
     }
-
     publications.addEventListener('click', showOptions);
+
+    const changeNavAppearance = () => {
+        const container = document.querySelector('.container');
+
+        if (window.pageYOffset > container.offsetTop - 70)
+            nav.classList.add('desktop');
+        else nav.classList.remove('desktop');
+
+
+    }
+    document.addEventListener('scroll', changeNavAppearance);
 }
 menu();
 

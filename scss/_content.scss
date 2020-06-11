@@ -1,5 +1,6 @@
 .container {
     padding: 20px;
+    height: 300vh;
 
     .container__title {
         width: 100%;
@@ -9,5 +10,9 @@
         font-weight: normal;
         font-style: italic;
         color: $main-brown;
+    }
+
+    .container__content-text {
+        font-size: 30px;
     }
 }
