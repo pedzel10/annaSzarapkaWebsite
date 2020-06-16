@@ -23,7 +23,7 @@ body {
         text-align: center;
 
         color: #fff;
-        font-family: 'MiamaNuevaMedium';
+        font-family: 'Marck Script', cursive;
         font-weight: normal;
         font-style: italic;
         text-shadow: 2px 2px 3px #000;
@@ -48,20 +48,29 @@ body {
         }
 
         .name {
-            font-size: 30px;
+            font-size: 20px;
             text-align: right;
-            top: 40%;
+            top: 36%;
             right: 19%;
+        }
+    }
+
+    @media (orientation: portrait) and (min-width: 760px) {
+        .name {
+            font-size: 35px;
+        }
+    }
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+        .name {
+            font-size: 35px;
         }
     }
 
     @media (orientation: landscape) and (min-width: 1500px) {
         .name {
             font-size: 55px;
-
         }
-
-
     }
 }
 
