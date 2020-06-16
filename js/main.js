@@ -51,7 +51,7 @@ const menu = () => {
     const changeNavAppearance = () => {
         const container = document.querySelector('.container');
 
-        if (window.pageYOffset > container.offsetTop - 70)
+        if (window.pageYOffset > container.offsetTop - 60)
             nav.classList.add('desktop');
         else nav.classList.remove('desktop');
 
