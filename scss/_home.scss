@@ -41,18 +41,27 @@ body {
         background-attachment: fixed;
     }
 
-    @media (orientation: landscape) and (min-width: 1500px) {
-        .name {
-            font-size: 55px;
-            text-align-last: right;
-            top: 40%;
-            right: 19%;
-        }
-
+    @media (orientation: landscape) {
         .main-photo {
             background-size: cover;
             background-position: 17% 70%;
         }
+
+        .name {
+            font-size: 30px;
+            text-align: right;
+            top: 40%;
+            right: 19%;
+        }
+    }
+
+    @media (orientation: landscape) and (min-width: 1500px) {
+        .name {
+            font-size: 55px;
+
+        }
+
+
     }
 }
 

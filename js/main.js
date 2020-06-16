@@ -36,11 +36,13 @@ const menu = () => {
         const gallery = document.querySelector('.nav__list-gallery');
         const contact = document.querySelector('.nav__list-contact');
         const divHide = document.querySelector('.hide');
+        const arrrow = document.querySelector('.fa-sort-down');
 
         publicationsSection.classList.toggle('on');
         gallery.classList.toggle('on');
         contact.classList.toggle('on');
         divHide.classList.toggle('on');
+        arrrow.classList.toggle('on');
 
 
     }
