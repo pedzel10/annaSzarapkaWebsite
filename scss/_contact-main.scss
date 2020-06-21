@@ -1,13 +1,14 @@
 .container {
 
-    height: 100vh;
+    max-height: 100vh;
     background-color: $background;
 
     .container__title {
         text-align: center;
         padding-top: 20px;
-        font-family: 'MiamaNuevaMedium';
+        font-family: 'Tangerine', cursive;
         color: $main-brown;
+        font-size: 30px;
     }
 
     .container__contact {
@@ -157,7 +158,113 @@
     @media (orientation: portrait) and (min-width: 760px) {
         .container__title {
             padding-top: 40px;
-            font-size: 40px;
+            font-size: 50px;
+        }
+    }
+
+    @media (orientation: landscape) {
+        .container__contact {
+            flex-direction: row;
+
+            .container__contact-photo {
+                width: 25%;
+            }
+
+            .container__contact-form {
+                margin-left: 10px;
+                width: 40%;
+
+
+
+
+                .contact-form__name .container__contact-form-input {
+                    margin-top: 0;
+                }
+
+                .contact-form__message {
+                    height: 80px;
+                }
+
+
+            }
+        }
+    }
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+        .container__title {
+            margin-top: 20px;
+            font-size: 50px;
+        }
+
+        .container__contact {
+            flex-direction: row;
+
+            .container__contact-photo {
+                width: 20%;
+            }
+
+            .container__contact-form {
+                margin-left: 10px;
+                width: 30%;
+
+                .container__contact-form-input {
+                    font-size: 14px;
+                    margin-top: 25px;
+                }
+
+                .contact-form__name .container__contact-form-input {
+                    margin-top: 0;
+                }
+
+                .contact-form__message {
+                    font-size: 14px;
+                    margin-top: 25px;
+                    height: 110px;
+                }
+
+                .contact-form__submit {
+                    margin-top: 15px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    @media (orientation: landscape) and (min-width: 1500px) {
+
+
+
+        .container__title {
+            margin-top: 50px;
+
+        }
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1500px) {
+    .nav {
+        .nav__list {
+            .nav__list-item {
+
+                text-shadow: none;
+                color: $main-brown;
+
+                .nav__link {
+                    color: $main-brown;
+                    text-shadow: none;
+                }
+            }
+
+            .nav__list-publications {
+                .hide {
+                    .nav__list-publications-section {
+                        .nav__list-piblications_section-link {
+                            color: $main-brown;
+                            text-shadow: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }

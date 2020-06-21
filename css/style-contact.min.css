@@ -368,15 +368,16 @@
 }
 
 .container {
-  height: 100vh;
+  max-height: 100vh;
   background-color: #fff6f2;
 }
 
 .container .container__title {
   text-align: center;
   padding-top: 20px;
-  font-family: 'MiamaNuevaMedium';
+  font-family: 'Tangerine', cursive;
   color: #361d1b;
+  font-size: 30px;
 }
 
 .container .container__contact {
@@ -550,7 +551,86 @@
 @media (orientation: portrait) and (min-width: 760px) {
   .container .container__title {
     padding-top: 40px;
-    font-size: 40px;
+    font-size: 50px;
+  }
+}
+
+@media (orientation: landscape) {
+  .container .container__contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .container__contact .container__contact-photo {
+    width: 25%;
+  }
+  .container .container__contact .container__contact-form {
+    margin-left: 10px;
+    width: 40%;
+  }
+  .container .container__contact .container__contact-form .contact-form__name .container__contact-form-input {
+    margin-top: 0;
+  }
+  .container .container__contact .container__contact-form .contact-form__message {
+    height: 80px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .container .container__title {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  .container .container__contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .container__contact .container__contact-photo {
+    width: 20%;
+  }
+  .container .container__contact .container__contact-form {
+    margin-left: 10px;
+    width: 30%;
+  }
+  .container .container__contact .container__contact-form .container__contact-form-input {
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  .container .container__contact .container__contact-form .contact-form__name .container__contact-form-input {
+    margin-top: 0;
+  }
+  .container .container__contact .container__contact-form .contact-form__message {
+    font-size: 14px;
+    margin-top: 25px;
+    height: 110px;
+  }
+  .container .container__contact .container__contact-form .contact-form__submit {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1500px) {
+  .container .container__title {
+    margin-top: 50px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1500px) {
+  .nav .nav__list .nav__list-item {
+    text-shadow: none;
+    color: #361d1b;
+  }
+  .nav .nav__list .nav__list-item .nav__link {
+    color: #361d1b;
+    text-shadow: none;
+  }
+  .nav .nav__list .nav__list-publications .hide .nav__list-publications-section .nav__list-piblications_section-link {
+    color: #361d1b;
+    text-shadow: none;
   }
 }
 /*# sourceMappingURL=style-contact.min.css.map */
