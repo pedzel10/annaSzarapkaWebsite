@@ -1,7 +1,11 @@
+body {
+    background-color: $background;
+}
+
 .container {
 
     max-height: 100vh;
-    background-color: $background;
+
 
     .container__title {
         text-align: center;
