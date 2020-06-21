@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document</title>
-    <!-- <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/miama" type="text/css" /> -->
+
+    <script src="https://kit.fontawesome.com/d078e3e1b8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_kA5zYL2ARDPhomiOVGLx8");
+        })();
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Marck+Script&family=Tangerine&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/style-contact.min.css">
 </head>
 
@@ -15,7 +26,8 @@
     <nav class='nav'>
         <ul class='nav__list'>
             <li class="nav__list-item"><a href="index.html" class="nav__link">Biografia</a></li>
-            <li class="nav__list-item nav__list-publications">Publikacje
+            <li class="nav__list-item nav__list-publications"><span class="nav__list-item-publications">Publikacje
+                    <i class="fas fa-sort-down"></i></span>
                 <div class="hide">
                     <ol class="nav__list-publications-section">
                         <li class="publications-section-item"><a href="scientific.html"
@@ -45,11 +57,11 @@
             <form action="" class="container__contact-form">
 
                 <div class="contact-form__name">
-                    <input type="text" class="container__contact-form-input" placeholder="Imię">
+                    <input name="name" type="text" class="container__contact-form-input" placeholder="Imię">
                     <div class="contact-form__name--line"></div>
                 </div>
                 <div class="contact-form__email">
-                    <input type="text" class="container__contact-form-input" placeholder="E-mail">
+                    <input name="email" type="text" class="container__contact-form-input" placeholder="E-mail">
                     <div class="contact-form__email--line"></div>
                 </div>
                 <div class="contact-form__message">
@@ -62,6 +74,8 @@
         </main>
     </section>
     <script src="js/main.js"></script>
+
+    <script type="module" src="js/sendEmail.js"></script>
 </body>
 
 </html>
