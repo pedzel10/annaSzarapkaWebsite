@@ -578,6 +578,25 @@ body {
   .container .container__contact .container__contact-form .contact-form__message {
     height: 80px;
   }
+  .container .container__contact.input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .container__contact.input .container__contact-photo {
+    width: 50%;
+  }
+  .container .container__contact.input .container__contact-form {
+    margin-left: 0px;
+    width: 70%;
+  }
+  .container .container__contact.input .container__contact-form .contact-form__name .container__contact-form-input {
+    margin-top: 12px;
+  }
+  .container .container__contact.input .container__contact-form .contact-form__message {
+    height: 110px;
+  }
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {

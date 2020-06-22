@@ -192,6 +192,32 @@ body {
 
             }
         }
+
+        .container__contact.input {
+            flex-direction: column;
+
+            .container__contact-photo {
+                width: 50%;
+            }
+
+            .container__contact-form {
+                margin-left: 0px;
+                width: 70%;
+
+
+
+
+                .contact-form__name .container__contact-form-input {
+                    margin-top: 12px;
+                }
+
+                .contact-form__message {
+                    height: 110px;
+                }
+
+
+            }
+        }
     }
 
     @media (orientation: landscape) and (min-width: 1024px) {
