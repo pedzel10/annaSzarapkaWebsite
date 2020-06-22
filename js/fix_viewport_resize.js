@@ -22,10 +22,17 @@ const fixViewportResize = () => {
     const textareaMessage = document.querySelector('.contact-form__message-input');
 
     const addInputClass = () => {
-        containerContact.classList.toggle('input');
+        containerContact.classList.add('input');
+    }
+    const removeInputClass = () => {
+        containerContact.classList.remove('input');
     }
     inputName.addEventListener('focus', addInputClass);
     inputEmail.addEventListener('focus', addInputClass);
     textareaMessage.addEventListener('focus', addInputClass);
+
+    inputName.addEventListener('blur', removeInputClass);
+    inputEmail.addEventListener('blur', removeInputClass);
+    textareaMessage.addEventListener('blur', removeInputClass);
 }
 fixViewportResize();
