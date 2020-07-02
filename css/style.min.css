@@ -336,10 +336,6 @@ body {
     color: #fff6f2;
     text-shadow: none;
   }
-  .nav.desktop .nav__list .nav__list-publications .hide .nav__list-publications-section.on {
-    border: 1px solid #fff6f2;
-    border-top: none;
-  }
 }
 
 .hamburger {
@@ -503,7 +499,7 @@ body {
     font-size: 50px;
   }
   .container .container__content-text {
-    font-size: 18px;
+    font-size: 20px;
     padding: 0 180px;
   }
 }
