@@ -16,6 +16,9 @@
 // fixViewportResize();
 
 const fixViewportResize = () => {
+
+    if (window.innerWidth >= 1500) return;
+
     const containerContact = document.querySelector('.container__contact');
     const inputName = document.querySelector('.contact-form__name .container__contact-form-input');
     const inputEmail = document.querySelector('.contact-form__email .container__contact-form-input');

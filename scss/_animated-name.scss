@@ -1,0 +1,130 @@
+@keyframes handwriting {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#A1 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: handwriting .4s linear forwards;
+}
+
+#A2 {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    //stroke-width: 30;
+    animation: handwriting .2s .4s linear forwards
+}
+
+#nna1 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    stroke-width: 15;
+    animation: handwriting .2s .4s linear forwards
+}
+
+#nna2 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    stroke-width: 15;
+    animation: handwriting .4s .4s linear forwards
+}
+
+#nna3 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    stroke-width: 15;
+    animation: handwriting .4s .5s linear forwards
+}
+
+#nna4 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    stroke-width: 15;
+    animation: handwriting .4s .6s linear forwards
+}
+
+#s1 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s .7s linear forwards
+}
+
+#z1 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s .9s linear forwards
+}
+
+#z2 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s .9s linear forwards
+}
+
+#arap1 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s 1s linear forwards
+}
+
+#arap2 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s 1s linear forwards
+}
+
+#arap3 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s 1.1s linear forwards
+}
+
+#arap4 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s 1.1s linear forwards
+}
+
+#arap5 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s 1.2s linear forwards
+}
+
+#arap6 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s 1.3s linear forwards
+}
+
+#ka1 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s 1.4s linear forwards
+}
+
+#ka2 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s 1.5s linear forwards
+}
+
+#ka3 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    //stroke-width: 30;
+    animation: handwriting .4s 1.6s linear forwards;
+}

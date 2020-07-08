@@ -27,8 +27,12 @@ body {
         font-weight: normal;
         font-style: italic;
         text-shadow: 2px 2px 3px #000;
-        font-size: 25px;
-        animation: showName 1.5s;
+
+        animation: showName 2s;
+
+        svg {
+            width: 80%;
+        }
     }
 
     .main-photo {
@@ -48,28 +52,32 @@ body {
         }
 
         .name {
-            font-size: 20px;
+            width: 40%;
             text-align: right;
             top: 36%;
-            right: 19%;
+            right: 15%;
+
+
         }
     }
 
     @media (orientation: portrait) and (min-width: 760px) {
         .name {
-            font-size: 35px;
+            svg {
+                width: 50%;
+            }
         }
     }
 
-    @media (orientation: landscape) and (min-width: 1024px) {
-        .name {
-            font-size: 35px;
-        }
-    }
+    // @media (orientation: landscape) and (min-width: 1024px) {
+    //     .name {
+    //         //right: 10%;
+    //     }
+    // }
 
     @media (orientation: landscape) and (min-width: 1500px) {
         .name {
-            font-size: 55px;
+            width: 35%;
         }
     }
 }
