@@ -217,6 +217,8 @@
     height: 160px;
     -webkit-transform: translateY(-160px);
             transform: translateY(-160px);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
   }
   .nav .nav__list .nav__list-publications .hide .nav__list-publications-section .publications-section-item {
     margin: 3px 0;
