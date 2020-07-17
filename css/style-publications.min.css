@@ -213,7 +213,7 @@
     display: none;
   }
   .nav .nav__list .nav__list-publications .hide .nav__list-publications-section {
-    padding: 10px 8px;
+    width: 210px;
     height: 160px;
     -webkit-transform: translateY(-160px);
             transform: translateY(-160px);
@@ -221,7 +221,7 @@
             transition-delay: 0s;
   }
   .nav .nav__list .nav__list-publications .hide .nav__list-publications-section .publications-section-item {
-    margin: 3px 0;
+    margin: 3px 10px;
     text-align: left;
     width: 100%;
   }
@@ -366,6 +366,7 @@
 }
 
 .container {
+  background-color: #fff6f2;
   padding: 20px;
 }
 
@@ -406,6 +407,9 @@
 }
 
 @media (orientation: landscape) and (min-width: 1500px) {
+  .container {
+    margin-top: 80px;
+  }
   .container .container__title {
     font-size: 50px;
   }

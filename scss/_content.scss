@@ -1,4 +1,5 @@
 .container {
+    background-color: $background;
     padding: 20px;
 
 
@@ -47,6 +48,8 @@
 
 @media (orientation: landscape) and (min-width: 1500px) {
     .container {
+
+        margin-top: 80px;
 
         .container__title {
             font-size: 50px;
